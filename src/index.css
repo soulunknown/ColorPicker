@@ -44,9 +44,20 @@ body {
   margin-top: 40px;
   transition: all 1s ease;
 }
-
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgb(243, 239, 7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 162, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(240, 224, 6, 0.842);
+  }
+}
 .selected {
   border: 2px solid black;
+  animation: glowing 2s infinite;
 }
 
 /* colors */
